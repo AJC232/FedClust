@@ -22,7 +22,7 @@ def process_client(conn, comm):
     print("waiting...")
     signal = comm.receive_signal(conn)
     print(f"signal: {signal} received")
-    comm.close_connection(conn)
+    # comm.close_connection(conn)
 
 # Function to run the server
 def run_server():
@@ -138,4 +138,7 @@ def run_server():
   print("Final MNIST Test Accuracy on server: ", test_accuracy)
   # print("Final CIFAR10 Train Accuracy on server: ", train_accuracy)
   # print("Final CIFAR10 Test Accuracy on server: ", test_accuracy)
+
+  for conn in connections:
+    comm.close_connection(conn)
   comm.close_server()
