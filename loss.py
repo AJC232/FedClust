@@ -1,8 +1,7 @@
 import torch
 import torch.nn as nn
-# from sklearn.metrics.pairwise import cosine_similarity
 from cosine_similarity import cosine_similarity
-from model_clusters import extract_model_weights
+from model_weights import extract_model_weights
 
 class Loss(nn.Module):
     def __init__(self):

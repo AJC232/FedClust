@@ -1,54 +1,95 @@
 # FedClust: Distributed Computing using Federated Learning
 
-## Project Description
+🚀 **FedClust** is a cutting-edge approach to federated learning (FL) that tackles the challenges of data heterogeneity by clustering local models. Traditional FL methods often struggle with non-IID (non-independent and identically distributed) data across clients. FedClust enhances model performance and generalization by leveraging contrastive learning principles, forming clusters of similar models, and creating an unbiased global model through cluster aggregation.
 
-FedClust is a novel approach to federated learning (FL) that addresses data heterogeneity by clustering local models. Traditional federated learning struggles with data heterogeneity due to non-IID (non-independent and identically distributed) data across clients. FedClust enhances the performance and generalization of local models by leveraging contrastive learning principles, forming clusters of similar models, and creating an unbiased global model through cluster aggregation.
+FedClust has been rigorously tested on various datasets, including **MNIST**, **Fashion MNIST**, **USPS**, and **SVHN**, and has demonstrated superior performance compared to existing state-of-the-art algorithms.
 
-This approach has been tested on datasets such as MNIST, Fashion MNIST, USPS, and SVHN, and has shown to outperform existing state-of-the-art algorithms in handling data heterogeneity.
+## ✨ Features
 
-## Features
+- 🔗 **Clustering-based Model Aggregation**: Groups similar local models to enhance training efficiency and model performance.
+- ⚖️ **Unbiased Global Model**: Reduces bias by averaging cluster models, ensuring better generalization across clients.
+- 📊 **Federated Learning with Data Heterogeneity**: Effectively handles diverse and non-IID data distributions across clients.
 
-- **Clustering-based Model Aggregation**: Groups similar local models to improve training efficiency and model performance.
-- **Unbiased Global Model**: Reduces bias by averaging cluster models to generalize across clients.
-- **Federated Learning with Data Heterogeneity**: Effectively manages diverse and non-IID data distributions.
+## 🛠️ Installation
 
-## Installation
+1. **Clone the Repository**:
 
-1.  Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/FedClust.git
+   cd FedClust
+   ```
 
-    ```bash
-    git clone https://github.com/yourusername/FedClust.git
-    cd FedClust
-    ```
+2. **Install Required Dependencies**:
 
-2.  Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+3. **Set Up the Environment**:
 
-3.  Set up the environment for federated learning experiments:
+   - Ensure Python 3.8+ is installed.
 
-- Ensure that Python 3.8+ is installed.
+## 🚀 Usage
 
-## Usage
+1. **Running the Experiment**:
+   To start an experiment, navigate to the project directory and run:
 
-1.  **Running the Experiment**: To run the experiment, navigate to the project directory and execute the following command:
-    ```bash
-    python run_experiment.py --dataset MNIST --clusters 5 --rounds 50
-    ```
-2.  **Experiment Configuration**:
+   ```bash
+   python main.py \
+    --drive_path './experiments/' \
+    --exp_name 'fmnist_cl2_dirichlet/' \
+    --clients 10 \
+    --dataset 'fmnist' \
+    --distribution 'noniid-labeldir' \
+    --rounds 50 \
+    --clusters 2 \
+    --epochs 10
+   ```
 
-- **--dataset**: Specify the dataset to use (e.g., MNIST, FMNIST, USPS, SVHN).
-- **--clusters**: Define the number of clusters for model aggregation.
-- **--rounds**: Set the number of communication rounds between clients and the server.
+2. **Experiment Configuration**:
 
-3. **Customizing the Model**: The model architecture can be modified in the model.py file. You can switch between CNN, ResNet-18, and ResNet-50 as base encoders.
+- `--drive_path`: Directory where experiment results will be saved.
 
-## Experiments
+  - Example: --drive_path './experiments/'
 
-FedClust has been tested in both centralized and federated environments. The experimental results show that increasing the number of clusters improves model performance.
+- `--exp_name`: Name of the experiment. Results will be stored in a folder with this name.
 
-## Contact
+  - Example: --exp_name 'fmnist_cl2_dirichlet/'
 
-For questions or support, please reach out to Adityasinh Chauhan - [202311063@daiict.ac.in](202311063@daiict.ac.in)
+- `--clients`: Number of clients participating in the federated learning process.
+
+  - Example: --clients 10
+
+- `--dataset`: Dataset to be used for the experiment. Available options include mnist, fmnist, usps, svhn.
+
+  - Example: --dataset 'fmnist'
+
+- `--distribution`: Data distribution strategy among clients.
+
+  - Example: --distribution 'noniid-labeldir'
+
+- `--rounds`: Number of communication rounds between clients and the server.
+
+  - Example: --rounds 50
+
+- `--clusters`: Number of clusters for model aggregation.
+
+  - Example: --clusters 2
+
+- `--epochs`: Number of local epochs each client will train - their model for.
+  - Example: --epochs 10
+
+3. **Customizing the Model**:
+   Modify the model architecture in the `model.py` file. You can switch between **CNN**, **ResNet-18**, and **ResNet-50** as base encoders.
+
+## 📈 Experiments
+
+FedClust has been evaluated in both centralized and federated learning environments. We initially assessed the baseline performance by training the model individually on a single client using conventional machine learning methods. This provided a reference for the model’s performance without federated learning or clustering.
+
+In the federated learning setup, we utilized \( N = 20 \) clients and \( T = 20 \) communication rounds to train the model. We explored various cluster configurations (2, 5, and 10 clusters) to examine the impact of clustering on the global model’s performance and its ability to address data heterogeneity. Additionally, we conducted experiments with 10 clients and 50 communication rounds to further validate the effectiveness of our approach.
+
+## 📬 Contact
+
+For questions or support, feel free to reach out:
+
+- **Adityasinh Chauhan**: [202311063@daiict.ac.in](mailto:202311063@daiict.ac.in)

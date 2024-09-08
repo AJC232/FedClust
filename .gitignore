@@ -6,3 +6,4 @@
 /models
 .env
 /__pycache__
+/run.sh

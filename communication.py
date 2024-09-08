@@ -1,5 +1,5 @@
-import pickle
 import socket
+import pickle
 from model import MOON
 
 class Communication:
