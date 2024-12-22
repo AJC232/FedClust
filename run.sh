@@ -1,0 +1,29 @@
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl2_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 2 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl3_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 3 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl4_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 4 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl5_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 5 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl6_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 6 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl7_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 7 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl8_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 8 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl9_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 9 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'fmnist_cl10_dirichlet/' --clients 10 --dataset 'fmnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 10 --epochs 10
+
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl2_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 2 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl3_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 3 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl4_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 4 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl5_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 5 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl6_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 6 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl7_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 7 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl8_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 8 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl9_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 9 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'svhn_cl10_dirichlet/' --clients 10 --dataset 'svhn' --distribution 'noniid-labeldir' --rounds 50 --clusters 10 --epochs 10
+
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl2_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 2 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl3_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 3 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl4_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 4 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl5_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 5 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl6_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 6 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl7_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 7 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl8_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 8 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl9_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 9 --epochs 10
+python main.py --drive_path './experiments/' --exp_name 'mnist_cl10_dirichlet/' --clients 10 --dataset 'mnist' --distribution 'noniid-labeldir' --rounds 50 --clusters 10 --epochs 10
