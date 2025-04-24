@@ -15,7 +15,7 @@ FedClust has been rigorously tested on various datasets, including **MNIST**, **
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/FedClust.git
+   git clone https://github.com/AJC232/FedClust.git
    cd FedClust
    ```
 
